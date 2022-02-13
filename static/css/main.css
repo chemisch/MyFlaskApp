@@ -1,13 +1,13 @@
 body {
     max-width: max-content;
     margin: auto;
+    background: url("/static/background.jpg") no-repeat 0px 0px;
+    background-color:rgb(26, 83, 92);
     }
 
 html {
     margin: 0;
     font-family: sans-serif;
-    background: url("/static/background.jpg") no-repeat 0px 0px;
-    background-position: left-bottom;
 }
 .content {
     margin: 0 auto;
