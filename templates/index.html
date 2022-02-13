@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<br><br>
+<h3>lets play Wheel of Fortune! Your word is: {{ Guess_String }} containing {{ Length_Word }} Letters</h3>
+<br><br>
+
+<table style="width:100%">
+    <tr>
+        <th>
+            <form method="POST">
+            <input name="Guess" minlength="1" maxlength="1"/>
+            <button type="submit">Guess button</button>
+            </form>
+        </th>
+        <th>
+            <form method="POST">
+            <button name ="Guess" value ="reset" type="submit">Reset button</button>
+            </form>
+        </th>
+    </tr>
+    <tr>
+        <td>    
+            <form method="POST">
+            <input name="Guess"/>
+            <button type="submit">Solve button</button>
+            </form>
+        </td>
+        <th>    
+            <form method="POST">
+            <button name ="Guess" value ="New_Word" type="submit">new word button</button>
+            </form>
+        </th>
+    </tr>
+</table>
+
+    {{ DisplayMSG }}
+</body>
+</html>

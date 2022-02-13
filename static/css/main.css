@@ -1,0 +1,42 @@
+body {
+    max-width: max-content;
+    margin: auto;
+    }
+
+html {
+    margin: 0;
+    font-family: sans-serif;
+    background: url("/static/background.jpg") no-repeat 0px 0px;
+    background-position: left-bottom;
+}
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
